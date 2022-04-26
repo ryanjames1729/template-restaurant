@@ -8,6 +8,13 @@ body{
     scroll-behavior: smooth;
 }
 
+body h1{
+	font-size:2em;
+	font-weight:bold;
+	margin:0;
+	padding:0.5rem;
+}
+
 .container {
 	max-width: 1050px;
 	width: 90%;
@@ -181,6 +188,20 @@ body{
 
 .contact li{
     display: inline;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.menu-item {
+	background-color: #242331;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(auto-fit);
+    box-shadow: 1px 1px 1px 0.5px #000;
 }
 
 #main-header{
