@@ -135,11 +135,6 @@ body h1{
 	font-size: 1.2rem;
 	/* color: #0e2431; */
   }
-
-  .loga a {
-	text-decoration: none;
-	/* font-size: 10rem; */
-  }
   
   .nav-container input[type="checkbox"]:checked ~ .menu-items {
 	transform: translateX(0);
@@ -204,6 +199,10 @@ body h1{
     box-shadow: 1px 1px 1px 0.5px #000;
 }
 
+.menu-item p{
+	padding: 10px;
+}
+
 #main-header{
 	background-color:coral;
 	color:#fff;
@@ -225,10 +224,10 @@ body h1{
 }
 #showcase{
 	background-image:url('background.jpg');
-	background-position:center right;
-	/* margin-bottom:30px; */
+	background-position:center;
 	text-align: center;
 	height: 100vh;
+	width: 100vw;
 }
 
 #showcase h1{
@@ -293,10 +292,35 @@ body h1{
 		width:100%;
 		float:none;
 	}
+
+	.logo h1{
+		font-size: 1.5rem;
+	}
+
+	.menu {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(auto-fit);
+		grid-gap: 20px;
+	}
+	
+	.menu-item {
+		background-color: #242331;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(auto-fit);
+		box-shadow: 1px 1px 1px 0.5px #000;
+	}
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
 	html {
 		scroll-behavior: auto;
+	}
+}
+
+@media(min-width:1280px){
+	#showcase{
+		background-position:center right;
 	}
 }
